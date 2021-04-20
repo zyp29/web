@@ -1,15 +1,21 @@
 // .components-layout{
 //     display: inline-block;
     .logo {
-        margin-right: 142px;
+        // margin-right: 142px;
+        float: left;
      }
+     .headerRight{
+        float: right;
+        display: flex;
+    }
      .ant-layout-header .ant-menu{
         white-space: nowrap;
+        flex: 1;
      }
 
     .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected{
         border-bottom: 0 solid #1890ff!important;
-        color: #000!important;
+        color: rgb(8, 6, 6)!important;
         a{
             color: #000!important;
         }
@@ -25,9 +31,11 @@
             font-family: PingFangSC-Semibold, sans-serif;
             font-size: 18px;
             height: 25px;
+            font-weight: 600;
         }
         span{
             font-size: 10px;
+            font-weight: 400;
         }
     }
     .ant-menu-horizontal{
@@ -63,6 +71,7 @@
                 font-family: PingFangSC-Semibold, sans-serif;
                 height: 22px;
                 font-size: 16px;
+                font-weight: 500;
             }
             span:nth-child(2){
                 color: #6D6D6D;

@@ -1,5 +1,4 @@
 import { Layout } from 'antd';
-import { Link } from "react-router-dom";
 import './index.less';
 import WebHeader from '../WebHeader';
 import WebFooter from '../WebFooter';

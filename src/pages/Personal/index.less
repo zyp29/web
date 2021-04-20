@@ -1,12 +1,10 @@
 .webContentItem{
     display: flex;
-    flex-direction: column;
-    position: relative;
-    // background-image: url("../../assets/bitmap1.png");
+    // flex-direction: column;
+    // position: relative;
     background: #F4F4F4 url(../../assets/bitmap1.png) no-repeat;
-    min-height: 499px;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: top center;
     .contentItem{
         width: 1112px;
         margin: 0 auto;
@@ -29,7 +27,7 @@
             .searchItem{    
                 display: flex;
                 .searchBtn{
-                    width: 420px;
+                    width: 390px;
                     padding-top: 30px;
                     .ant-input-affix-wrapper{
                         border: 1px solid #4CB6AD;
@@ -67,8 +65,6 @@
         .tabContent{
             margin-top: 20px;
             position: relative;
-            display: flex;
-            justify-content: space-between;
             .sidebar{
                 width: 64px;
                 background: #fff;
@@ -129,6 +125,10 @@
                 }
             }
             .tabItem{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            .tabLevel{
                 border-radius: 6px;
                 width: 734px;
                 height: 265px;
@@ -147,6 +147,24 @@
                         font-size: 16px;
                         color: #E44351;
                         border-bottom: 3px solid #E44351;
+                    }
+                    .workConfer{
+                        text-align: center;
+                        width: 90px;
+                        font-family: PingFangSC-Semibold, PingFang SC;
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: #76CFF1;
+                        border-bottom: 3px solid #76CFF1;
+                    }
+                    .taskConfer{
+                        text-align: center;
+                        width: 90px;
+                        font-family: PingFangSC-Semibold, PingFang SC;
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: #4CB6AD;
+                        border-bottom: 3px solid #4CB6AD;
                     }
                 }
                 .hrItem{
@@ -178,6 +196,33 @@
                     color: rgba(0, 0, 0, 0.5)
                 }
             }
+            .systemContent{
+                display: flex;
+                width: 184px;
+                flex-wrap: wrap;
+                .systemItem{
+                    width: 174px;
+                    height: 128px;
+                    display: flex;
+                    border-radius: 6px;
+                }
+                .systemItem:nth-child(even){
+                    flex: 1;
+                }
+                .systemItem:nth-child(1){
+                    background: linear-gradient(143deg, #7A58ED 0%, #435BFD 100%);
+                }
+                .systemItem:nth-child(2){
+                    background: linear-gradient(143deg, #F9A526 0%, #E44351 100%);
+                }
+                .systemItem:nth-child(3){
+                    background: linear-gradient(137deg, #4389FD 0%, #4CB6AD 100%);
+                }
+                .systemItem:nth-child(4){
+                    background: linear-gradient(226deg, #FADE64 0%, #F9A526 100%);
+                }
+            }
+            
             .tabBox{
                 .tabLayout{
                     table-layout: auto;
@@ -200,6 +245,20 @@
                             border-top: 1px solid #809FA0A0;
                         }
                     }
+                    .worktabThead{
+                        text-align: left;
+                        border-collapse: separate;
+                        border-spacing: 0;
+                        th{
+                            padding: 7px;
+                            color: #9FA0A0;
+                            font-size: 12px;
+                            text-align: center;
+                            font-family: PingFangSC-Regular, PingFang SC;
+                            background: rgba(118, 207, 241, 0.05);
+                            border-top: 1px solid #809FA0A0;
+                        }
+                    }
                     .tabTbody{
                         tr:nth-child(1){
                             td{
@@ -218,7 +277,6 @@
             }
             .scheduleContent{
                 width: 357px;
-                height: 256px;
                 background: #fff;
                 border-radius: 6px;
                 .calendarContent{
@@ -278,17 +336,40 @@
                 }
                 .scheduleItem{
                     padding:0 20px;
+                    .scheduleInfo:nth-child(1){
+                        margin-top: 17px;
+                    }
                     .scheduleInfo{
-                        padding: 17px 0;
+                        margin-bottom: 20px;
                         color: #000000;
                         font-size: 12px;
+                        display: flex;
+                        align-items: center;
                         .addIcon{
-
+                            margin-right: 10px;
+                            width: 13px;
+                            height: 14px;
+                            background: #76CFF1;
+                            border-radius: 15px;
+                            line-height: 14px;
+                            text-align: center;
+                            color: #fff;
                         }
+                        .yuanIcon{
+                            width: 5px;
+                            height: 6px;
+                            border: 1px solid #76CFF1;
+                            border-radius: 15px;
+                            margin: 0 15px 0 4px;
+                        }
+                    }
+                    .scheduleInfo:last-child{
+                        margin-bottom: 15px;
                     }
                 }
             }
         }
+    }
        
     }
 }

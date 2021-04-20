@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import { Layout, Menu, Breadcrumb } from 'antd';
 import headerLogo from '../../assets/headerLogo.png'
+import userhead from '../../assets/userhead .png'
 import './index.less'
 
 const WebHeader = () => {
@@ -57,7 +58,7 @@ const WebHeader = () => {
                         </Menu.Item>
                     </Menu>
                     <div className="userItem">
-                        <img src="" alt="" />
+                        <img src={userhead} alt="" />
                         <div className="userInfo">
                             <span>王青青</span>
                             <span>运营主管</span>

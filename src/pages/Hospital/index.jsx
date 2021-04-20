@@ -1,6 +1,5 @@
 import React from 'react'
-import { Carousel } from 'antd';
-
+import './index.less'
 class Hospital extends React.Component {
     constructor(props) {
         super(props);
@@ -24,22 +23,10 @@ class Hospital extends React.Component {
             background: '#364d79',
         };
         return (
-            <div>
-                hhhhh
-                {/* <Carousel afterChange={this.onChange}>
-                    <div>
-                        <h3 style={contentStyle}>1</h3>
-                    </div>
-                    <div>
-                        <h3 style={contentStyle}>2</h3>
-                    </div>
-                    <div>
-                        <h3 style={contentStyle}>3</h3>
-                    </div>
-                    <div>
-                        <h3 style={contentStyle}>4</h3>
-                    </div>
-                </Carousel> */}
+            <div className="webContentItem">
+              <div className="contentBac">
+
+              </div>
             </div>
         )
     }

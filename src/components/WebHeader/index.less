@@ -1,10 +1,81 @@
-.components-layout{
-    display: flex;
-}
-.components-layout .logo {
-   padding-right: 142px;
+// .components-layout{
+//     display: inline-block;
+    .logo {
+        margin-right: 142px;
+     }
+     .ant-layout-header .ant-menu{
+        white-space: nowrap;
+     }
+
+    .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected{
+        border-bottom: 0 solid #1890ff!important;
+        color: #000!important;
+        a{
+            color: #000!important;
+        }
     }
-.ant-row-rtl #components-layout-demo-top .logo {
-    float: right;
-    margin: 16px 0 16px 24px;
+    .ant-menu-horizontal > .ant-menu-item a{
+        color: #7F7F7F!important;
+        display: flex;
+        max-height: 100px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .navTitle{
+            font-family: PingFangSC-Semibold, sans-serif;
+            font-size: 18px;
+            height: 25px;
+        }
+        span{
+            font-size: 10px;
+        }
     }
+    .ant-menu-horizontal{
+        border-bottom: 0 solid #f0f0f0;
+    }
+    .ant-menu-horizontal > .ant-menu-item a:hover {
+        color: #000!important;
+    }
+    .ant-menu-horizontal > .ant-menu-item{
+        border-bottom: 0 solid transparent!important;
+    }
+    .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item{
+        margin: 0 25px!important;
+    }
+   
+    .userItem{
+        margin-left: 43px;
+        display: flex;
+        align-items: center;
+        img{
+            width: 54px;
+            height: 54px;
+            margin-right: 10px;
+        }
+        .userInfo{
+            
+            display: flex;
+            flex-direction: column;
+            max-height: 100px;
+            justify-content: center;
+            span:nth-child(1){
+                color: #000;
+                font-family: PingFangSC-Semibold, sans-serif;
+                height: 22px;
+                font-size: 16px;
+            }
+            span:nth-child(2){
+                color: #6D6D6D;
+                font-size: 14px;
+            }
+        }
+       
+    }
+    .signOutBtn{
+        margin-left: 44px;
+        color: #9FA0A0;
+        font-size: 14px;
+        cursor: pointer;
+    }
+// }
+

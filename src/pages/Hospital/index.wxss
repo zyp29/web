@@ -78,6 +78,39 @@
 .webContentItem .contentItem .popularInfo .popularContent .popularNews .popularList ul > li:last-child {
   margin-bottom: 0;
 }
+.webContentItem .contentItem .popularInfo .scheduleItem {
+  padding: 0 20px;
+}
+.webContentItem .contentItem .popularInfo .scheduleItem .scheduleInfo:nth-child(1) {
+  margin-top: 17px;
+}
+.webContentItem .contentItem .popularInfo .scheduleItem .scheduleInfo {
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.webContentItem .contentItem .popularInfo .scheduleItem .scheduleInfo .addIcon {
+  margin-right: 10px;
+  width: 13px;
+  height: 14px;
+  background: #F9A526;
+  border-radius: 15px;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+}
+.webContentItem .contentItem .popularInfo .scheduleItem .scheduleInfo .yuanIcon {
+  width: 5px;
+  height: 6px;
+  border: 1px solid #F9A526;
+  border-radius: 15px;
+  margin: 0 15px 0 4px;
+}
+.webContentItem .contentItem .popularInfo .scheduleItem .scheduleInfo:last-child {
+  margin-bottom: 15px;
+}
 .webContentItem .contentItem .popularInfo .popularDate {
   border-radius: 10px;
   display: flex;
@@ -157,21 +190,6 @@
 .webContentItem .contentItem .popularInfo .popularDate .popularSchedule p span {
   margin-left: 10px;
 }
-.webContentItem .contentItem .popularInfo .popularDate .popularDaiySchedule ul {
-  color: #F9A526;
-}
-.webContentItem .contentItem .popularInfo .popularDate .popularDaiySchedule ul li {
-  padding-bottom: 20px;
-}
-.webContentItem .contentItem .popularInfo .popularDate .popularDaiySchedule ul li span {
-  font-size: 12px;
-  font-family: PingFangSC-Regular, PingFang SC;
-  font-weight: 400;
-  color: #000000;
-}
-.webContentItem .contentItem .popularInfo .popularDate .popularDaiySchedule ul li:last-child {
-  padding: 0;
-}
 .webContentItem .contentItem .hospitalContent {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -201,12 +219,14 @@
   border-bottom: 3px solid #E44351;
 }
 .webContentItem .contentItem .hospitalContent .tabItem .tabDescribe .moreBtn {
-  cursor: pointer;
   text-align: right;
   flex: 1 1;
   font-size: 12px;
   font-family: PingFangSC-Regular, PingFang SC;
   color: rgba(0, 0, 0, 0.5);
+}
+.webContentItem .contentItem .hospitalContent .tabItem .tabDescribe .moreBtn span {
+  cursor: pointer;
 }
 .webContentItem .contentItem .hospitalContent .tabItem .tabContent .tabBirth {
   display: flex;

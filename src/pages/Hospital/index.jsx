@@ -72,20 +72,25 @@ class Hospital extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="popularSchedule">
-                                <p>
-                                    <img src="" alt="" />
-                                    <span>添加日程</span>
-                                </p>
+                            <div className="scheduleItem">
+                                    <div className="scheduleInfo">
+                                        <div className="addIcon">+</div>
+                                    添加日程
+                                </div>
+                                    <div className="scheduleInfo">
+                                        <div className="yuanIcon"></div>
+                                    12:30卫生检查
+                                </div>
+                                    <div className="scheduleInfo">
+                                        <div className="yuanIcon"></div>
+                                    15:00上级接待
+                                </div>
+                                    <div className="scheduleInfo">
+                                        <div className="yuanIcon"></div>
+                                    重要日程
+                                </div>
+                                </div>
                             </div>
-                            <div className="popularDaiySchedule">
-                                <ul>
-                                    <li><span>12:30卫生检查</span></li>
-                                    <li><span>15:00上级接待</span></li>
-                                    <li><span>16:30重要日程</span></li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                     <div className="hospitalContent">
 

@@ -57,6 +57,7 @@ const WebHeader = () => {
                             </Link>
                         </Menu.Item>
                     </Menu>
+                    
                     <div className="userItem">
                         <img src={userhead} alt="" />
                         <div className="userInfo">
@@ -66,9 +67,8 @@ const WebHeader = () => {
                     </div>
                     <div className="signOutBtn">
                         [退出]
-            </div>
+                     </div>
                 </div>
-
             </div>
         </div>
     )

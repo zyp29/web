@@ -124,6 +124,41 @@
                     }
                 }
             }
+            .multipleCell{
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 62px;
+                .tabItem{
+                    width: 357px;
+                    .myPerformance{
+                        text-align: center;
+                        width: 90px;
+                        font-family: PingFangSC-Semibold, PingFang SC;
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: #0079BB;
+                        border-bottom: 3px solid #0079BB;
+                    }
+                    .documentCenter{
+                        text-align: center;
+                        width: 90px;
+                        font-family: PingFangSC-Semibold, PingFang SC;
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: #BBAA6A;
+                        border-bottom: 3px solid #BBAA6A;
+                    }
+                    .infoNotice{
+                        text-align: center;
+                        width: 90px;
+                        font-family: PingFangSC-Semibold, PingFang SC;
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: #FADE64;
+                        border-bottom: 3px solid #FADE64;
+                    }
+                }
+            }
             .tabItem{
                 display: flex;
                 justify-content: space-between;
@@ -134,6 +169,57 @@
                 height: 265px;
                 background: #fff;
                 padding: 0 17px 17px 17px;
+                .infoPro{
+                    border-top: 1px solid #809FA0A0;
+                    .chart{
+                        padding: 30px 0 13px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        color: #0079BB;
+                        font-size: 12px;
+                        .performanceChart{
+                            margin-bottom: 7px;
+                        }
+                    }
+                    .documentList{
+                        padding-top: 17px;
+                        ul{
+                            margin: 0;
+                            padding: 0;
+                            width: 323px;
+                            li{
+                                list-style-type: none;
+                                display: flex;
+                                align-items: center;
+                                padding-bottom: 10px;
+                                .colorBlock{
+                                    margin-right: 7px;
+                                    width: 3px;
+                                    height: 3px;
+                                    background: #FADE64;
+                                }
+                                img{
+                                    width: 10px;
+                                    height: 12px;
+                                    margin-right: 13px;
+                                }
+                                a{
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    font-size: 12px;
+                                    color: #000000;
+                                }
+                            }
+                            li:last-child{
+                                padding: 0;
+                            }
+                        }
+                    }
+                   
+                }    
                 .tabDescribe{
                         display: flex;
                         line-height: 50px;
@@ -188,26 +274,38 @@
                     }
                 }
                 .moreBtn{
-                    cursor: pointer;
                     text-align: right;
                     flex: 1;
                     font-size: 12px;
                     font-family: PingFangSC-Regular, PingFang SC;
-                    color: rgba(0, 0, 0, 0.5)
+                    color: rgba(0, 0, 0, 0.5);
+                    span{
+                        cursor: pointer;
+                    }
                 }
             }
             .systemContent{
                 display: flex;
-                width: 184px;
+                width: 358px;
                 flex-wrap: wrap;
+                justify-content: space-between;
+                align-content: space-between;
                 .systemItem{
                     width: 174px;
-                    height: 128px;
+                    height: 140px;
                     display: flex;
                     border-radius: 6px;
-                }
-                .systemItem:nth-child(even){
-                    flex: 1;
+                    color: #FFFFFF;
+                    font-size: 12px;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    cursor: pointer;
+                    img{
+                        width: 54px;
+                        height: 54px;
+                        margin-bottom: 12px;
+                    }
                 }
                 .systemItem:nth-child(1){
                     background: linear-gradient(143deg, #7A58ED 0%, #435BFD 100%);
@@ -265,12 +363,18 @@
                                 padding-top: 14px;
                             }
                         }
+                        
                         td{
                             padding: 0 14px 14px 14px;
                             font-family: PingFangSC-Regular, PingFang SC;
                             font-weight: 400;
                             color: #000000;
                             font-size: 12px
+                        }
+                        tr:last-child{
+                            td{
+                                padding-bottom: 0;
+                            }
                         }
                     }
                 }

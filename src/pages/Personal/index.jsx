@@ -6,6 +6,10 @@ import sideicon3 from '../../assets/sideicon3.png';
 import sideicon4 from '../../assets/sideicon4.png';
 import sideicon5 from '../../assets/sideicon5.png';
 import shape from '../../assets/shape.png';
+import systemicon1 from '../../assets/systemicon1.png';
+import systemicon2 from '../../assets/systemicon2.png';
+import systemicon3 from '../../assets/systemicon3.png';
+import systemicon4 from '../../assets/systemicon4.png';
 import './index.less'
 
 const { Search } = Input;
@@ -274,16 +278,20 @@ class Home extends React.Component {
                             </div>
                             <div className="systemContent">
                                 <div className="systemItem">
-
+                                    <img src={systemicon1} alt="" />
+                                    HRP系统
                                 </div>
                                 <div className="systemItem">
-
+                                    <img src={systemicon2} alt="" />
+                                诊疗系统
                                 </div>
                                 <div className="systemItem">
-
+                                    <img src={systemicon3} alt="" />
+                                CRM系统
                                 </div>
                                 <div className="systemItem">
-
+                                    <img src={systemicon4} alt="" />
+                                HCM系统
                                 </div>
                             </div>
                         </div>
@@ -331,7 +339,7 @@ class Home extends React.Component {
                                                         <div style={{ display: "flex", width: "125px", marginRight: "5px" }}>
                                                             <Progress percent={50} strokeColor="#E44351" showInfo={false} />
                                                         </div>
-                                                        <div style={{color:"#E44351"}}>
+                                                        <div style={{ color: "#E44351" }}>
                                                             进行中
                                                         </div>
                                                     </div>
@@ -347,7 +355,7 @@ class Home extends React.Component {
                                                         <div style={{ display: "flex", width: "125px", marginRight: "5px" }}>
                                                             <Progress percent={100} strokeColor="#809FA0A0" showInfo={false} />
                                                         </div>
-                                                        <div style={{color:"#809FA0A0"}}>
+                                                        <div style={{ color: "#809FA0A0" }}>
                                                             已结束
                                                         </div>
                                                     </div>
@@ -363,7 +371,7 @@ class Home extends React.Component {
                                                         <div style={{ display: "flex", width: "125px", marginRight: "5px" }}>
                                                             <Progress percent={0} trailColor="rgba(118, 207, 241, 0.2)" showInfo={false} />
                                                         </div>
-                                                        <div style={{color:"#76CFF1"}}>
+                                                        <div style={{ color: "#76CFF1" }}>
                                                             未开始
                                                         </div>
                                                     </div>
@@ -376,10 +384,10 @@ class Home extends React.Component {
                                                 <td style={{ textAlign: "center" }}>2021-04-23 </td>
                                                 <td style={{ textAlign: "center", width: "250px" }}>
                                                     <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                                    <div style={{ display: "flex", width: "125px", marginRight: "5px" }}>
+                                                        <div style={{ display: "flex", width: "125px", marginRight: "5px" }}>
                                                             <Progress percent={100} strokeColor="#809FA0A0" showInfo={false} />
                                                         </div>
-                                                        <div style={{color:"#809FA0A0"}}>
+                                                        <div style={{ color: "#809FA0A0" }}>
                                                             已结束
                                                         </div>
                                                     </div>
@@ -392,10 +400,10 @@ class Home extends React.Component {
                                                 <td style={{ textAlign: "center" }}>2021-04-23 </td>
                                                 <td style={{ textAlign: "center", width: "250px" }}>
                                                     <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                                    <div style={{ display: "flex", width: "125px", marginRight: "5px" }}>
+                                                        <div style={{ display: "flex", width: "125px", marginRight: "5px" }}>
                                                             <Progress percent={0} trailColor="rgba(118, 207, 241, 0.2)" showInfo={false} />
                                                         </div>
-                                                        <div style={{color:"#76CFF1"}}>
+                                                        <div style={{ color: "#76CFF1" }}>
                                                             未开始
                                                         </div>
                                                     </div>
@@ -408,10 +416,10 @@ class Home extends React.Component {
                                                 <td style={{ textAlign: "center" }}>2021-04-23 </td>
                                                 <td style={{ textAlign: "center", width: "250px" }}>
                                                     <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                                    <div style={{ display: "flex", width: "125px", marginRight: "5px" }}>
+                                                        <div style={{ display: "flex", width: "125px", marginRight: "5px" }}>
                                                             <Progress percent={0} trailColor="rgba(118, 207, 241, 0.2)" showInfo={false} />
                                                         </div>
-                                                        <div style={{color:"#76CFF1"}}>
+                                                        <div style={{ color: "#76CFF1" }}>
                                                             未开始
                                                         </div>
                                                     </div>
@@ -424,10 +432,10 @@ class Home extends React.Component {
                                                 <td style={{ textAlign: "center" }}>2021-04-23 </td>
                                                 <td style={{ textAlign: "center", width: "250px" }}>
                                                     <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                                    <div style={{ display: "flex", width: "125px", marginRight: "5px" }}>
+                                                        <div style={{ display: "flex", width: "125px", marginRight: "5px" }}>
                                                             <Progress percent={0} trailColor="rgba(118, 207, 241, 0.2)" showInfo={false} />
                                                         </div>
-                                                        <div style={{color:"#76CFF1"}}>
+                                                        <div style={{ color: "#76CFF1" }}>
                                                             未开始
                                                         </div>
                                                     </div>
@@ -440,22 +448,145 @@ class Home extends React.Component {
                                                 <td style={{ textAlign: "center" }}>2021-04-23 </td>
                                                 <td style={{ textAlign: "center", width: "250px" }}>
                                                     <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                                    <div style={{ display: "flex", width: "125px", marginRight: "5px" }}>
+                                                        <div style={{ display: "flex", width: "125px", marginRight: "5px" }}>
                                                             <Progress percent={0} trailColor="rgba(118, 207, 241, 0.2)" showInfo={false} />
                                                         </div>
-                                                        <div style={{color:"#76CFF1"}}>
+                                                        <div style={{ color: "#76CFF1" }}>
                                                             未开始
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
-
-
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
+                        <div className="multipleCell">
+                            <div className="tabItem">
+                                <div className="tabLevel" style={{ height: "auto" }}>
+                                    <div className="tabDescribe">
+                                        <div className="myPerformance">
+                                            我的绩效
+                                        </div>
+                                        <div className="moreBtn">
+                                            <span>
+                                                MORE
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div className="infoPro">
+                                        <div className="chart">
+                                            <div className="performanceChart">
+                                                <Progress type="circle" percent={7.5} format={percent => `${percent} 分`} />
+                                            </div>
+                                        10分制
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="tabItem">
+                                <div className="tabLevel" style={{ height: "auto" }}>
+                                    <div className="tabDescribe">
+                                        <div className="documentCenter">
+                                            文档中心
+                                        </div>
+                                        <div className="moreBtn">
+                                            <span>
+                                                MORE
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div className="infoPro">
+                                        <div className="documentList">
+                                            <ul>
+                                                <li>
+                                                    <img src="" alt="" />
+                                                    <a>董事会文件(2021)003号人事通知书</a>
+                                                </li>
+                                                <li>
+                                                    <img src="" alt="" />
+                                                    <a>集团文件(2021)003号关于展开2021年质量管控实施文件</a>
+                                                </li>
+                                                <li>
+                                                    <img src="" alt="" />
+                                                    <a>集团文件(2021)001号关于展开管控实施</a>
+                                                </li>
+                                                <li>
+                                                    <img src="" alt="" />
+                                                    <a>任命通知(2021)关于集团总部任命通知第001号文件详详详详详详详</a>
+                                                </li>
+                                                <li>
+                                                    <img src="" alt="" />
+                                                    <a>集团文件(2021)003号关于展开2021年质量管控实施文件</a>
+                                                </li>
+                                                <li>
+                                                    <img src="" alt="" />
+                                                    <a>部门文件(2020)003号文件</a>
+                                                </li>
+                                                <li>
+                                                    <img src="" alt="" />
+                                                    <a>部门文件(2020)002号文件</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="tabItem">
+                                <div className="tabLevel" style={{ height: "auto" }}>
+                                    <div className="tabDescribe">
+                                        <div className="infoNotice">
+                                            信息通知
+                                        </div>
+                                        <div className="moreBtn">
+                                            <span>
+                                                MORE
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div className="infoPro">
+                                        <div className="infoPro">
+                                            <div className="documentList">
+                                                <ul>
+                                                    <li>
+                                                        <div className="colorBlock"></div>
+                                                        <a>哥伦比亚中国携手玫琳凯为白衣天使圆梦</a>
+                                                    </li>
+                                                    <li>
+                                                        <div className="colorBlock"></div>
+                                                        <a>盘点2019年十大“高光时刻”</a>
+                                                    </li>
+                                                    <li>
+                                                        <div className="colorBlock"></div>
+                                                        <a>哥伦比亚中国携手玫琳凯为白衣天使圆梦</a>
+                                                    </li>
+                                                    <li>
+                                                        <div className="colorBlock"></div>
+                                                        <a>荣膺“2019先锋雇主奖项”</a>
+                                                    </li>
+                                                    <li>
+                                                        <div className="colorBlock"></div>
+                                                        <a>为爱接力 | 2019 VIVA “爱无界” 慈善行动</a>
+                                                    </li>
+                                                    <li>
+                                                        <div className="colorBlock"></div>
+                                                        <a>荣膺“2019先锋雇主奖项”</a>
+                                                    </li>
+                                                    <li>
+                                                        <div className="colorBlock"></div>
+                                                        <a>为爱接力 | 2019 VIVA “爱无界” 慈善行动</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

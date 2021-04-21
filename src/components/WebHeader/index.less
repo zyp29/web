@@ -57,6 +57,7 @@
         margin-left: 43px;
         display: flex;
         align-items: center;
+        cursor: pointer;
         img{
             width: 54px;
             height: 54px;
@@ -87,6 +88,64 @@
         color: #9FA0A0;
         font-size: 14px;
         cursor: pointer;
+    }
+    .userSetting{
+        width: 250px;
+        border-radius: 2px;
+        background: #fff;
+        padding: 10px 0;
+        .userInfoItem{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px 10px 5px;
+            border-bottom: 0.5px solid #ddd;
+            img{
+                width: 50px;
+                height: 50px;
+            }
+            .userDepartment{
+                width: 165px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                font-size: 13px;
+                color: #9FA0A0;
+                a{
+                    padding-right: 10px;
+                }
+                .userAddress{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+        .settingList{
+            padding:0 10px;
+            .settingItem{
+                cursor: pointer;
+                padding-top: 10px;
+                color: #7F7F7F ;
+                font-size: 13px;
+                display: flex;
+                justify-content: space-between;
+                .settingTitle{
+                    display: flex;
+                    align-items: center;
+                    .textItem{
+                        padding-left: 13px;
+                    }
+
+                }
+                .settingAction{
+                    .actionTitle{
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
     }
 // }
 
